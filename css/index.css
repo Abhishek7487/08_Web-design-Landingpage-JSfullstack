@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-div {
+  background: url(../images/backcover.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* ---------------------------------- */
+/* -------------NAVBAR--------------- */
+/* ---------------------------------- */
+nav {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1246px;
+  margin: 0 auto;
+}
+
+/* Nav list */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+/* Nav list items */
+.nav-item {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Nav BTN */
+.signin-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  background: linear-gradient(to right, #965cf2, #ff8adc);
+  color: #fff;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+/* ---------------------------------- */
+/* ---------INTRO SECTION------------ */
+/* ---------------------------------- */
+.intro-section {
+  margin-left: 140px;
+  display: flex;
+  align-items: center;
+}
+/* //////////// */
+/* Left section */
+/* //////////// */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  align-self: flex-start;
+  margin-top: 100px;
+}
+
+/* Heading */
+.left-section h1 {
+  font-size: 68px;
+  font-weight: 600;
+  color: #3e4794;
+}
+
+/* Description */
+.left-section h4 {
+  font-size: 16px;
+  text-align: start;
+  font-weight: 300;
+  padding-right: 150px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+/* Left section BTN */
+.learn-more-btn {
+  display: flex;
+  align-self: flex-start;
+  padding: 16px 36px;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(to right, #965cf2, #ff8adc);
+  border-radius: 60pc;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* //////////// */
+/* Img Div */
+/* //////////// */
+.imgs-div {
+  height: auto;
+  display: flex;
+  position: relative;
+  padding-right: 100px;
+}
+
+/* Vector IMG & DOT */
+.vector-img,
+.vector-dot {
+  position: absolute;
+}
+
+.vector-img {
+  bottom: 200px;
+}
+
+.vector-dot {
+  bottom: 290px;
+  left: 60px;
+}
+
+/* Cover IMG */
+img[alt="intro-img"] {
+  height: 800px;
+  align-self: flex-start;
+}
