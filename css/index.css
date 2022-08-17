@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.main-div {
+.container {
   background: url(../images/backcover.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -19,12 +19,10 @@ body {
 /* -------------NAVBAR--------------- */
 /* ---------------------------------- */
 nav {
-  height: 20vh;
+  padding: 40px 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1246px;
-  margin: 0 auto;
 }
 
 /* Nav list */
@@ -57,10 +55,12 @@ nav {
 /* ---------INTRO SECTION------------ */
 /* ---------------------------------- */
 .intro-section {
-  margin-left: 140px;
-  display: flex;
+  padding-left: 140px;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
   align-items: center;
 }
+
 /* //////////// */
 /* Left section */
 /* //////////// */
@@ -106,8 +106,8 @@ nav {
 /* //////////// */
 /* Img Div */
 /* //////////// */
-.imgs-div {
-  height: auto;
+.img-div {
+  /* height: 100%; */
   display: flex;
   position: relative;
   padding-right: 100px;
@@ -130,6 +130,185 @@ nav {
 
 /* Cover IMG */
 img[alt="intro-img"] {
-  height: 800px;
+  width: 100%;
   align-self: flex-start;
+}
+
+/* ------------------- MEDIA QUERIES ------------------------ */
+@media screen and (max-width: 1230px) {
+  .intro-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vector-img {
+    bottom: 60px;
+  }
+
+  .vector-dot {
+    bottom: 146px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  nav {
+    padding: 40px 68px;
+  }
+
+  .intro-section {
+    padding: 0 68px;
+  }
+
+  .img-div {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    background-size: 100rem;
+    height: max-content;
+  }
+
+  nav {
+    padding: 22px 60px;
+  }
+
+  nav img {
+    height: 42px;
+  }
+
+  .nav-items {
+    gap: 24px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+  }
+
+  .signin-btn {
+    font-size: 14px;
+  }
+
+  .intro-section {
+    padding: 36px 60px;
+  }
+
+  .left-section {
+    margin-top: 24px;
+  }
+
+  .left-section h4 {
+    padding-right: 12px;
+  }
+
+  .vector-img {
+    bottom: 0;
+  }
+
+  .vector-dot {
+    bottom: 86px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  nav {
+    padding: 24px 36px;
+  }
+
+  .intro-section {
+    padding: 36px 36px;
+  }
+
+  .left-section {
+    gap: 36px;
+  }
+
+  .left-section h1 {
+    font-size: 48px;
+  }
+
+  .left-section h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-items {
+    display: none;
+  }
+
+  .intro-section {
+    grid-template-columns: 1fr;
+  }
+
+  .img-div {
+    order: -1;
+  }
+
+  .left-section {
+    align-items: center;
+  }
+
+  .left-section h4 {
+    padding: 0;
+    text-align: center;
+  }
+
+  .left-section .learn-more-btn {
+    align-self: center;
+  }
+
+  .img-div {
+    height: 400px;
+  }
+
+  .img-div img:last-child {
+    height: 100%;
+  }
+
+  .vector-img {
+    left: 40px;
+  }
+
+  .vector-dot {
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 24px 16px;
+  }
+
+  nav img {
+    height: 28px;
+  }
+
+  .signin-btn {
+    font-size: 14px;
+    padding: 8px 36px;
+  }
+
+  .intro-section {
+    padding: 36px 16px;
+  }
+
+  .img-div {
+    height: 300px;
+  }
+
+  .learn-more-btn {
+    font-size: 20px;
+    padding: 12px 36px;
+  }
+
+  .vector-img {
+    height: 76px;
+  }
+
+  .vector-dot {
+    height: 20px;
+    left: 80px;
+    bottom: 56px;
+  }
 }
